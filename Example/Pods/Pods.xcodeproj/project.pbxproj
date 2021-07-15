@@ -11,6 +11,8 @@
 		19C3EDC9420B019242137C36AB80CB9A /* Pods-Floaton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383B6324D65A681E9F1969CB84031700 /* Pods-Floaton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50CEF9B6CFE01E8E791E50E4380F642E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		55DA360A26A073CD00846A1C /* ButtonUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360926A073CD00846A1C /* ButtonUIModel.swift */; };
+		55DA360C26A0749000846A1C /* enumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360B26A0749000846A1C /* enumModel.swift */; };
+		55DA360E26A075FF00846A1C /* Floaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360D26A075FF00846A1C /* Floaton.swift */; };
 		B072C359FE9D2D038EC3416C0CD21A9A /* Floaton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 899660D946F0D7052A00CD2F1B1D0547 /* Floaton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBBF117960F7EE32248D41A54B2A9A34 /* Pods-Floaton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E7BBA1652A477CCA23D04ECB31D1 /* Pods-Floaton_Example-dummy.m */; };
 		C6D5858A776A8F8E92BBE54417F7A98E /* Pods-Floaton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AF6020F36132E601D36C7E01A69EEB /* Pods-Floaton_Tests-dummy.m */; };
@@ -49,6 +51,8 @@
 		4DD295ED612473E0A1E0823C93F69CD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		51125281E474A880240445C3242B4CBF /* Pods-Floaton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Floaton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55DA360926A073CD00846A1C /* ButtonUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUIModel.swift; sourceTree = "<group>"; };
+		55DA360B26A0749000846A1C /* enumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumModel.swift; sourceTree = "<group>"; };
+		55DA360D26A075FF00846A1C /* Floaton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floaton.swift; sourceTree = "<group>"; };
 		5E8B255568023CF9414155FC5EEF9482 /* Pods-Floaton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Floaton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		66DD88B2D458148A1881A7EA7D0674B9 /* Floaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Floaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B37E7BBA1652A477CCA23D04ECB31D1 /* Pods-Floaton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Floaton_Example-dummy.m"; sourceTree = "<group>"; };
@@ -120,7 +124,9 @@
 		55DA360826A073B700846A1C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				55DA360D26A075FF00846A1C /* Floaton.swift */,
 				55DA360926A073CD00846A1C /* ButtonUIModel.swift */,
+				55DA360B26A0749000846A1C /* enumModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 			files = (
 				DC7CDDAFCBE4344050551D0D1B92F14F /* Floaton-dummy.m in Sources */,
 				55DA360A26A073CD00846A1C /* ButtonUIModel.swift in Sources */,
+				55DA360C26A0749000846A1C /* enumModel.swift in Sources */,
+				55DA360E26A075FF00846A1C /* Floaton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -625,7 +633,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Floaton/Floaton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Floaton/Floaton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Floaton/Floaton.modulemap";
 				PRODUCT_MODULE_NAME = Floaton;
@@ -693,7 +701,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -722,7 +730,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Floaton/Floaton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Floaton/Floaton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Floaton/Floaton.modulemap";
 				PRODUCT_MODULE_NAME = Floaton;

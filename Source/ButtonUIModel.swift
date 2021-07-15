@@ -5,4 +5,23 @@
 //  Created by Gokul Nair on 15/07/21.
 //
 
-import Foundation
+import UIKit
+
+extension UIButton {
+    
+    func applyButtonUI(BGColor: UIColor, imgColor: UIColor) {
+        layer.cornerRadius = bounds.height/2
+        backgroundColor = BGColor
+        tintColor = imgColor
+    }
+    
+    func applyButtonConfiguration(size: CGFloat, iconName: String, weight: UIImage.SymbolWeight) {
+        if Floaton.floatonImageType == .custom {
+            setImage(UIImage(named: iconName), for: .normal)
+        }else {
+            let configuration = UIImage.SymbolConfiguration(pointSize: size, weight: weight)
+            let buttonImage = UIImage(systemName: iconName, withConfiguration: configuration)
+            setImage(buttonImage, for: .normal)
+        }
+    }
+}

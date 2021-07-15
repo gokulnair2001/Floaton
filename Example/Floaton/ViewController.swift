@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import Floaton
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Floaton.addFloatingButton(buttonPosition: .right, animationDirect: .vertical, buttonPointSize: 60, imageType: .system, images: ["plus.viewfinder","swift","swift","swift"], floatonTintColors: [.black, .systemOrange, .white, .systemPink], floatonBGColor: [.red, .systemIndigo, .systemPink, .yellow], view: view)
+        Floaton.operatingHapticFeedback(state: true)
+        
+        Floaton.firstButton.addTarget(self, action: #selector(firstButtonAction), for: .touchUpInside)
+        Floaton.secondButton.addTarget(self, action: #selector(secondButtonAction), for: .touchUpInside)
+        Floaton.thirdButton.addTarget(self, action: #selector(thirdButtonAction), for: .touchUpInside)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK:- Secondary button actions
+    @objc func firstButtonAction() {
+        print("1")
     }
-
+    
+    @objc func secondButtonAction() {
+        print("2")
+    }
+    
+    @objc func thirdButtonAction() {
+        print("3")
+    }
 }
 
