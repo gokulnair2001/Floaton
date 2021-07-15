@@ -1,0 +1,22 @@
+{
+  "name": "Floaton",
+  "version": "0.1.0",
+  "summary": "A short description of Floaton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gokulnair2001/Floaton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gokulnair2001": "gokulnair.2001@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gokulnair2001/Floaton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Floaton/Classes/**/*"
+}

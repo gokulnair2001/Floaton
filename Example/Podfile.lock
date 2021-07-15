@@ -1,0 +1,16 @@
+PODS:
+  - Floaton (0.1.0)
+
+DEPENDENCIES:
+  - Floaton (from `../`)
+
+EXTERNAL SOURCES:
+  Floaton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Floaton: f54b8c617e0af03d55badadc6cc26aeb040d7d29
+
+PODFILE CHECKSUM: 1cd6a5e339c94d63e89bc1c215734f684cb45f75
+
+COCOAPODS: 1.9.3

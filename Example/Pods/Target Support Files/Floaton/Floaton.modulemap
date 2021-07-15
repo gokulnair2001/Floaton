@@ -1,0 +1,6 @@
+framework module Floaton {
+  umbrella header "Floaton-umbrella.h"
+
+  export *
+  module * { export * }
+}
