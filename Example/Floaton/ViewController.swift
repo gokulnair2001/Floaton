@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Floaton.addFloatingButton(buttonPosition: .right, animationDirect: .vertical, buttonPointSize: 60, imageType: .system, images: ["plus.viewfinder","swift","swift","swift"], floatonTintColors: [.black, .systemOrange, .white, .systemPink], floatonBGColor: [.red, .systemIndigo, .systemPink, .yellow], view: view)
+        Floaton.addFloatingButton(buttonPosition: .right, animationDirect: .vertical, buttonPointSize: 60, imageType: .system, images: ["swift","swift","swift","swift"], imageSizes: [30,24,24, 24], floatonTintColors: [.white, .systemOrange, .white, .systemPink], floatonBGColor: [.black, .systemIndigo, .systemPink, .yellow], view: view)
         Floaton.operatingHapticFeedback(state: true)
         
         Floaton.firstButton.addTarget(self, action: #selector(firstButtonAction), for: .touchUpInside)

@@ -23,7 +23,7 @@ public class Floaton {
     static var floatonImageType = imageType.system
     
     
-    public static func addFloatingButton(buttonPosition: buttonPosition, animationDirect: animationDirection, buttonPointSize: CGFloat, imageType: imageType, images:[String], floatonTintColors: [UIColor], floatonBGColor: [UIColor], view: UIView) {
+    public static func addFloatingButton(buttonPosition: buttonPosition, animationDirect: animationDirection, buttonPointSize: CGFloat, imageType: imageType, images:[String], imageSizes:[CGFloat], floatonTintColors: [UIColor], floatonBGColor: [UIColor], view: UIView) {
         
         let Width:CGFloat = buttonPointSize
         
@@ -64,22 +64,22 @@ public class Floaton {
         
         thirdButton.frame = CGRect(x: mainButton.center.x - rootButtonWidth/2, y: mainButton.center.y - rootButtonWidth/2, width: rootButtonWidth, height: rootButtonWidth)
         
-        if images.count == 4 && floatonTintColors.count == 4 {
+        if images.count == 4 && floatonTintColors.count == 4 && imageSizes.count == 4{
             
-            mainButton.applyButtonConfiguration(size: 30, iconName: images[0], weight: .regular)
-            mainButton.applyButtonUI(BGColor: floatonBGColor[0], imgColor: floatonTintColors[0])
+            mainButton.applyFloatonUI(BGColor: floatonBGColor[0], imgColor: floatonTintColors[0])
+            mainButton.applyFloatonConfiguration(size: imageSizes[0], iconName: images[0], weight: .regular)
             
-            firstButton.applyButtonUI(BGColor: floatonBGColor[1], imgColor: floatonTintColors[1])
-            firstButton.applyButtonConfiguration(size: 24, iconName: images[1], weight: .medium)
+            firstButton.applyFloatonUI(BGColor: floatonBGColor[1], imgColor: floatonTintColors[1])
+            firstButton.applyFloatonConfiguration(size: imageSizes[1], iconName: images[1], weight: .medium)
             
-            secondButton.applyButtonUI(BGColor: floatonBGColor[2], imgColor: floatonTintColors[2])
-            secondButton.applyButtonConfiguration(size: 24, iconName: images[2], weight: .medium)
+            secondButton.applyFloatonUI(BGColor: floatonBGColor[2], imgColor: floatonTintColors[2])
+            secondButton.applyFloatonConfiguration(size: imageSizes[2], iconName: images[2], weight: .medium)
             
-            thirdButton.applyButtonUI(BGColor: floatonBGColor[3], imgColor: floatonTintColors[3])
-            thirdButton.applyButtonConfiguration(size: 24, iconName: images[3], weight: .medium)
+            thirdButton.applyFloatonUI(BGColor: floatonBGColor[3], imgColor: floatonTintColors[3])
+            thirdButton.applyFloatonConfiguration(size: imageSizes[3], iconName: images[3], weight: .medium)
             
         }else {
-            print("Floaton Warning: Images and FloatonTintColors must be 4 in count respectively")
+            print("Floaton Warning: Images, ImageSizes and FloatonTintColors must be 4 in count respectively")
         }
         
         
