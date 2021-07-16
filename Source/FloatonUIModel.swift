@@ -1,5 +1,5 @@
 //
-//  ButtonUIModel.swift
+//  FloatonUIModel.swift
 //  Floaton
 //
 //  Created by Gokul Nair on 15/07/21.
@@ -9,13 +9,13 @@ import UIKit
 
 extension UIButton {
     
-    func applyButtonUI(BGColor: UIColor, imgColor: UIColor) {
+    func applyFloatonUI(BGColor: UIColor, imgColor: UIColor) {
         layer.cornerRadius = bounds.height/2
         backgroundColor = BGColor
         tintColor = imgColor
     }
     
-    func applyButtonConfiguration(size: CGFloat, iconName: String, weight: UIImage.SymbolWeight) {
+    func applyFloatonConfiguration(size: CGFloat, iconName: String, weight: UIImage.SymbolWeight) {
         if Floaton.floatonImageType == .custom {
             setImage(UIImage(named: iconName), for: .normal)
         }else {

@@ -10,7 +10,7 @@
 		02347B43F54E82C33065619F675C578B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		19C3EDC9420B019242137C36AB80CB9A /* Pods-Floaton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383B6324D65A681E9F1969CB84031700 /* Pods-Floaton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50CEF9B6CFE01E8E791E50E4380F642E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		55DA360A26A073CD00846A1C /* ButtonUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360926A073CD00846A1C /* ButtonUIModel.swift */; };
+		55DA360A26A073CD00846A1C /* FloatonUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360926A073CD00846A1C /* FloatonUIModel.swift */; };
 		55DA360C26A0749000846A1C /* enumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360B26A0749000846A1C /* enumModel.swift */; };
 		55DA360E26A075FF00846A1C /* Floaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA360D26A075FF00846A1C /* Floaton.swift */; };
 		B072C359FE9D2D038EC3416C0CD21A9A /* Floaton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 899660D946F0D7052A00CD2F1B1D0547 /* Floaton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,7 +50,7 @@
 		445B172A155B3795109E9A8D4C186646 /* Pods-Floaton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Floaton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4DD295ED612473E0A1E0823C93F69CD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		51125281E474A880240445C3242B4CBF /* Pods-Floaton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Floaton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		55DA360926A073CD00846A1C /* ButtonUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUIModel.swift; sourceTree = "<group>"; };
+		55DA360926A073CD00846A1C /* FloatonUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatonUIModel.swift; sourceTree = "<group>"; };
 		55DA360B26A0749000846A1C /* enumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumModel.swift; sourceTree = "<group>"; };
 		55DA360D26A075FF00846A1C /* Floaton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floaton.swift; sourceTree = "<group>"; };
 		5E8B255568023CF9414155FC5EEF9482 /* Pods-Floaton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Floaton_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				55DA360D26A075FF00846A1C /* Floaton.swift */,
-				55DA360926A073CD00846A1C /* ButtonUIModel.swift */,
+				55DA360926A073CD00846A1C /* FloatonUIModel.swift */,
 				55DA360B26A0749000846A1C /* enumModel.swift */,
 			);
 			path = Source;
@@ -395,7 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7CDDAFCBE4344050551D0D1B92F14F /* Floaton-dummy.m in Sources */,
-				55DA360A26A073CD00846A1C /* ButtonUIModel.swift in Sources */,
+				55DA360A26A073CD00846A1C /* FloatonUIModel.swift in Sources */,
 				55DA360C26A0749000846A1C /* enumModel.swift in Sources */,
 				55DA360E26A075FF00846A1C /* Floaton.swift in Sources */,
 			);
