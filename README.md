@@ -16,3 +16,7 @@ func addFloatingButton(buttonPosition: buttonPosition, animationDirect: animatio
 | Left + Vertical | Right + Horizontal |
 | -- | -- |
 | <img src="https://user-images.githubusercontent.com/56252259/148718675-5dcaeca6-68d1-4554-af93-bcbe4a632c15.png" width = 240, height = 460></img> | <img src="https://user-images.githubusercontent.com/56252259/148718677-7e78ab2d-a770-40eb-af3e-72c3668a1847.png" width = 240, height = 460></img>|
+
+# ⚠️ Warning
+* Not a fully fledged test framework, won't suggest to use it on your production based applications!
+* if you need any changes raise a PR and I will try to make it possible.
